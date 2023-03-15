@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <p class="logo">CSS</p> 
+        <nav class="nav">
+                <ul>
+                    <li><a href="#CSS-Tutorial">CSS Tutorial</a></li>
+                    <li><a href="#CSS-Advanced">CSS Advanced</a></li>
+                    <li><a href="#CSS-Responsive">CSS Responsive</a></li>
+                    <li><a href="#CSS-Grid">CSS Grid</a></li>
+                    <li><a href="#CSS-Properties">CSS Properties</a></li>
+                </ul>
+        </nav>
+    </header>
+    <section class="CSS-Tutorial" id="CSS-Tutorial">
+        <div class="container"><br><br><br><br><br>
+            <h1>Cascading Style Sheets</h1>
+            <p><b>CSS</b> is a language where we use to style an HTML document.</p>
+            <p><strong>CSS</strong> describes how HTML elements should be displayed.</p>
+            <p><b>CSS</b> is used to define <i>styles</i> for  our web pages, including the <em>design,</em>layout and <br> variations in display for different devices and screen sizes. </p>
+            <h3>CSS Example</h3><br>
+            <style>
+                .cls{
+                    font-family: Arial, Helvetica, sans-serif;
+                    text-align: center;
+                    background-color: aqua;
+                }
+            </style>
+            <body>
+                <h4 class="cls">This is third level of heading.</h4>
+                <p class="cls">This is a paragraph.</p> 
+            </body><br>
+            <h3>CSS Syntax</h3>
+            <p>A <b>CSS rule</b> consists of a <span style="color:rgb(56, 15, 202)">selector and a declaration </span> block.</p>
+            <img src="images/csssyntax.png" alt="css syntax">
+            <pre class="pre">
+            <p>The selector points to the HTML element you want to style.
+             The declaration block contains one or more declaration separated by semicolons.
+             Each declaration includes a CSS property name and a value, separated by a colon.
+             Multiple CSS declarations are separated with semicolons, and declaration blocks are surrounded by the curly braces.
+            </p></pre>
+            <h2>CSS Selectors </h2>
+            <p>A CSS selector selects the HTML elements you want to style.</p>
+            <h3  id="para">The CSS id Selector</h3>
+            <p>The id selector uses the id attribute of an HTML element to select a specific element.</p>
+            <P>To select an element with a specific id, write a <span style="color:rgb(202, 15, 15)"><i>hash(#) character</i></span>, followed by the id of the element.</P>
+            <h3 id="para">The CSS Class Selector</h3>
+            <p>The class selector selects HTML elements with a specific class attribute.</p>
+            <p>To select elements with a specific class, write a <span style="color:rgb(202, 15, 15)"><i>period(.) character</i></span>, followed by the class name.</p>
+            <h5>Example</h5>
+            <p class="center-large">This paragraph will be red, center-aligned, and in a large font size.</p><br>
+            <h3>The CSS Universal Selector</h3>
+            <p>The Universal Selector(*) selects all HTML elements on the page.</p>
+            <div class="star">
+                <h6>Hello world!</h6>
+                <p>This is Universal Selector Example.</p>
+            </div><br>
+            <h2>How to Add CSS</h2>
+            <p>When a browser reads a style sheet, it will format the HTML document according to the information in the style sheet.</p>
+            <h3>Three Ways to Insert CSS</h3>
+            <p>There are three ways of inserting a style sheet:</p>
+            <ul>
+                <li>External CSS</li>
+                <li>Internal CSS</li>
+                <li>Inline CSS</li>
+            </ul>
+        </div>    
+    </section>  
+    <section class="CSS-Advanced" id="CSS-Advanced">
+        <div class="container"><br><br><br><br><br>
+            <div class="box">
+                <h2>CSS Rounded Corners</h2>
+                <div class="roundcorner">
+                    <h3>CSS Rounded Corners</h3>
+                    <p>with the CSS border-radius property, you can give any element "rounded corners".</p>
+                </div> 
+                <h2>CSS Border Images</h2>
+                <div class="borderimage">
+                    <h2>CSS Border Images</h2>
+                    <p>With the CSS border-image property, you can set an image to be used as the border around an element.</p>
+                </div>
+            </div> 
+            <h2>CSS Border Image Properties</h2>
+            <img src="images/borderproperties.png"><br>
+            <div class="grad">
+                <h2>CSS Gradients</h2>
+                <p>CSS gradients let you display smooth transitions between two or more specified colors.</p>
+                <h3>CSS Linear Gradients</h3>
+                <p>To create a linear gradient you must define ar least two color stops.<br>
+                  Color stops are the colors you want to render smooth transitions among.
+                </p>
+            </div><br>
+            <h2>CSS Shadow Effects</h2> 
+            <p>With CSS you can add shadow to text and to elements.</p>
+            <ul>
+                <li>text-shadow</li>
+                <li>box-shadow</li>
+            </ul><br>
+            <h3>CSS Text Shadow</h3>
+            <p>The CSS text-shadow property applies shadow to text.</p>
+            <h2 id="shadow">Text-shadow effect!</h2>
+            <h2 id="shadow1">Text-shadow effect!</h2>
+            <h2 id="shadow2">Text-shadow effect!</h2>
+        </div> <br>
+        <div class="animate">
+            <h2>CSS Animations</h2>  
+            <p>CSS allows animation of HTML elements without using Javascript or Flash!</p> 
+            <h3>What are CSS Animations?</h3>
+            <p>An animation lets an element gradually change from one style to another. <br>
+            
+               You can change as many CSS properties you want, as many times as you want. <br><br>
+           
+               To use CSS animation, you must first specify some keyframes for the animation. <br>
+            
+               Keyframes hold what styles the element will have at certain times.
+            </p>
+          <h3>The @keyframes Rule</h3>
+          <p>When you specify CSS styles inside the @keyframes rule, <br>
+             the animation will gradually change from the current style to the new style at certain times.
+             <br>
+             To get an animation to work, you must bind the animation to an element. <br><br>
+             The animation-duration property defines how long an animation should take to complete. <br>
+             If the animation-duration property is not specified, no animation will occur, because the default value is 0s. 
+           </p>
+           <h2>CSS Animation Properties</h2>
+           <img src="images/animate properties.png"><br>
+        </div>
+        
+    </section>
+    <section class="CSS-Responsive" id="CSS-Responsive">
+        <div class="container"><br><br><br><br><br>    
+           <h1>Responsive Web Design</h1>
+           <p>Responsive web design makes your web page look good on all devices.</p>
+           <P>Responsive web design uses on HTML and CSS.</P><br>
+           <h3>Responsive Web Design-The Viewport</h3>
+           <p>The viewport is the user's visible area of a webpage.</p>
+           <p>The viewport varies with the device, and will be smaller on a mobile phone than on a computer screen.</p>
+           <h4><i>Setting The Viewport</i></h4>
+           <p>HTML5 introduced a method to let web designers take control over the viewport, through the &lt meta &gt tag.</p>
+           <p>You should include the following &ltmeta&gt viewport element in all your web pages:</p>
+           <p>&ltmeta name="viewport" content="width=device-width, initial-scale=1.0"&gt</p>
+           <h2>Responsive Web Design-Grid View</h2>
+           <p>Many web pages are based on a grid-view, which means that the page is divided into columns:</p>
+           <p>using a grid-view is very helpful when designing web pages.It makes is easier to place elements on the page.</p>
+           <h3>Building a Responsive Grid-View</h3>
+           <p>All HTML elements have the box-sizing property set to border-box. <br>
+             This makes sure that the padding and border are included in the total width and height of the elements. <br>
+             
+             *{
+                <pre>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; box-sizing: border-box; 
+              </pre>
+             }
+          </p>
+        </div>     
+    </section>    
+    <section class="CSS-Grid" id="CSS-Grid">
+        <div class="container"><br><br><br><br><br>
+            <h2>CSS Grid Layout Module</h2>
+            <h3>Grid Layout</h3>
+            <p>This grid layout contains six columns and three rows:</p><br>
+            <img src="images/grid.jpg" alt="grid image"><br>
+            <h3>Grid Elements</h3>
+            <p>A grid layout consists of a parent element, with one or more child elements.</p><br>
+            <img src="images/grid-element.jpg"><br>
+            <h3>Display Property</h3>
+            <p>An HTML element becomes a grid container when its <b>display</b> property is set to <b>grid or inline grid.</b></p>
+            <br>
+                <pre>
+                        .grid-container{ <br>
+                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; display: grid; <br>
+                    }
+              </pre>
+            <h4>Grid Gaps</h4>
+            <p>The spaces between each column/row are called gaps.</p>
+            <p>You can Adjust the gap size by using one of the following properties:</p>
+            <ul>
+                <li>column-gap</li>
+                <li>row-gap</li>
+                <li>gap</li>
+            </ul> 
+        </div>   
+    </section>
+    <section class="CSS-Properties" id="CSS-Properties">
+        <div class="container"><br><br><br><br><br>
+         <h2>CSS Properties</h2>   
+          <p>A CSS property is a characteristic whose associated value defines <br> one aspect of how the browser should display the element.</p><br> 
+          <pre>
+           <u>align-content</u>     specifies the alignment between the lines inside a
+                                    flexible container when the items do not use All
+                                    available space. <br>
+           <u>align-items</u>       Specifies the alignment for the items inside a 
+                                    flexible container 
+
+          <u>background-color</u>     Specifies the background color of an element  
+
+          <u>background-origin</u>    Specifies the origin position of a background image
+
+          <u>background-size</u>	  Specifies the size of the background images
+
+           <u> border-inline</u>	 A shorthand property for border-inline-width, 
+                                    border-inline-style and border-inline-color
+
+           <u>cursor</u>	          Specifies the mouse cursor to be displayed when
+                                       pointing over an element
+
+           <u>display</u>            Specifies how a certain HTML element should be  
+                                     displayed  
+                                     
+           <u>flex</u>               A shorthand property for the                         
+                                flex-grow, flex-shrink, and the flex-basis properties
+
+           <u>font</u>	            A shorthand property for the font-style,font-variant, 
+                                    font-weight, font-size/line-height, and 
+                                    the font-family properties                    
+          </pre>
+        </div>    
+    </section>      
+</body>
+</html>

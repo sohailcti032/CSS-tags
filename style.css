@@ -1,0 +1,206 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+body,html{
+    text-align: center;
+    background-color: lightpink;
+}
+li, a, button{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+    font-size: 20px;
+    text-decoration: none;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    background: fixed;
+    background-color: black;
+    position: fixed;
+    width: 100%;
+}
+.logo{
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+.nav li a{
+   color: white;
+}
+.nav li{ 
+    display: inline-block;
+    padding: 0px 20px;
+}
+img{
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+}
+p,ul,ol{
+    line-height: 30px;
+    font-size: larger;
+}
+table, th, td{
+    font-size: 20px;
+    border: 1px solid black;
+   margin-left: auto;
+   margin-right: auto;
+}
+.container ul {
+    text-align: center;
+    display: inline-block;
+    text-align: left;
+}
+.container ol {
+    text-align: center;
+    display: inline-block;
+    text-align: left;
+}
+.HTML-Elements{
+    background-color: pink;
+}
+.HTML-Attributes{
+    background-color: rgb(120, 240, 240) ;
+}
+.HTML-Styles{
+    background-color:linen ;
+}
+.HTML-Formats{
+    background-color:rgb(205, 148, 231) ;
+}
+.HTML-Tables-Lists{
+    background-color:aquamarine ;
+}
+/*.button{
+    background-color: rgb(110, 238, 110);
+   
+    position: relative;
+    transform: translate(-50%,-40%);
+    top: 50%;
+    left: 50%;
+    padding: 10px 10px;
+    font-size: 20px;
+    font-weight: bold;
+}*/
+.pre{
+    color:rgb(15, 15, 15);
+    text-align: center;
+    font-weight: 300;
+
+}
+#para{
+    text-align: center;
+    color:rgb(42, 30, 210);
+    font-style: oblique;
+}
+.center-large{
+    text-align: center;
+    color: red;
+    font-style: italic;
+    font-size: 30px; 
+}
+.star{
+    text-align: center;
+    color: blue;
+    background-color: aqua;
+    font-size: 300;
+}
+.box{
+    display: flex;
+    padding: 40px 15%;
+}
+.roundcorner{
+    border-radius: 25px;
+    background-color:aquamarine ;
+    padding: 25px;
+    width: 250px;
+    height: 200px;
+    display: inline-block;
+}
+.borderimage{
+    border: 10px solid transparent;
+    padding: 20px;
+    width: 300px;
+    height: 200px;
+    border-image: url(images/border-image.png) 30 round;
+}
+.grad{
+    height: 200px;
+    background-image: linear-gradient(violet,rgb(115, 238, 121));
+}
+#shadow{
+    text-shadow: 2px 2px 5px red;
+}
+#shadow1{
+    color: white;
+    text-shadow:1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+#shadow2{
+    color: chartreuse;
+    text-shadow:-1px 0 black, 0 1px black, 1px 0 black,0 -1px black;
+}
+.animate{
+    width: 100%;
+    height: 100%;
+    background-color: cyan;
+    animation-name: ani;
+    animation-duration: 4s;
+}
+@keyframes ani{
+  0%   {background-color: red;}
+  25%  {background-color: yellow;}
+  50%  {background-color: rgb(204, 175, 231);}
+  100% {background-color: chartreuse;}
+}
+.CSS-Tutorial{
+    background-color: pink;
+}
+.CSS-Advanced{
+    background-color: rgb(184, 243, 243) ;
+}
+.CSS-Responsive{
+    background-color:linen ;
+}
+.CSS-Grid{
+    background-color:rgb(219, 183, 236) ;
+}
+.CSS-Properties{
+    background-color:rgb(187, 247, 227) ;
+}
+/* Media Query for Menu */
+
+@media only screen and (max-width: 800px){
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: #333;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    nav ul li a{
+        color: #fff;
+    }
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+    }
+}
+/* Media Query for less than 600 screen size */
+
+@media only screen and (max-width: 600px){
+    .container{
+        text-align: center;
+    }
+}
